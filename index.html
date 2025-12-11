@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>게임 허브 - Game Collection</title>
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+</head>
+<body>
+    <!-- 메인 메뉴 화면 -->
+    <div id="main-menu" class="screen active">
+        <div class="menu-container">
+            <h1 class="game-hub-title">🎮 GAME HUB 🎮</h1>
+            <p class="subtitle">원하는 게임을 선택하세요!</p>
+            <div class="game-grid">
+                <div class="game-card" data-game="platformer">
+                    <div class="game-icon">🏃</div>
+                    <h3>Platformer Jump</h3>
+                    <p>플랫폼을 뛰어넘고 적을 피해 끝까지 달려라!</p>
+                    <button class="play-btn" data-game-key="platformer">플레이</button>
+                </div>
+                
+                <div class="game-card" data-game="baseball">
+                    <div class="game-icon">⚾</div>
+                    <h3>Number Baseball</h3>
+                    <p>숫자를 맞춰서 야구 게임을 즐겨보세요!</p>
+                    <button class="play-btn" data-game-key="baseball">플레이</button>
+                </div>
+                
+                <div class="game-card" data-game="galaxy">
+                    <div class="game-icon">🚀</div>
+                    <h3>Galaxy Defender</h3>
+                    <p>우주를 지켜라! 외계인을 무찌르세요!</p>
+                    <button class="play-btn" data-game-key="galaxy">플레이</button>
+                </div>
+                
+                <div class="game-card" data-game="falling">
+                    <div class="game-icon">🎯</div>
+                    <h3>Falling Dot Hunter</h3>
+                    <p>떨어지는 점들을 잡고 무궁화 꽃이 피었습니다!</p>
+                    <button class="play-btn" data-game-key="falling">플레이</button>
+                </div>
+                
+                <div class="game-card" data-game="bangdream">
+                    <div class="game-icon">🎵</div>
+                    <h3>Rhythm Game</h3>
+                    <p>리듬에 맞춰 노트를 쳐보세요!</p>
+                    <button class="play-btn" data-game-key="bangdream">플레이</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 게임 플레이 화면 -->
+    <div id="game-screen" class="screen">
+        <div class="game-header">
+            <button class="back-btn" id="back-to-menu-btn">← 메인 메뉴로</button>
+            <h2 id="current-game-title"></h2>
+        </div>
+        <div id="game-container">
+            <!-- 각 게임의 iframe이 여기에 로드됩니다 -->
+        </div>
+    </div>
+
+    <script src="js/gamehub.js?v=1.0"></script>
+</body>
+</html>
